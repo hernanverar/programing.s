@@ -1,16 +1,26 @@
-window.onload = function() {
-  let form = document.querySelector("form");
-  form.onsubmit = function(event) {
-    // in this section we get the value for each form input
-    const p1Input = document.getElementById("p1").value;
-    const p2Input = document.getElementById("p2").value;
+const ul_1 =document.querySelector(".option1");
+const ul_2 =document.querySelector(".option2");
+const ul_3 =document.querySelector(".option3");
 
-    document.querySelector("span#p1").innerText = p1;
-    document.querySelector("span#p1").innerText = p2;
+const q1 = document.querySelector(".q1");
+const q2 = document.querySelector(".q2");
+const q3 = document.querySelector(".q3");
 
+const survey = document.querySelector(".survey");
+const end = document.querySelector(".end");
 
+ul_1.addEventListener("click", function() {
+  q1.style.display = "none";
+  q2.style.display ="block";
+});
 
-  event.preventDefault();
-  console.log
-  };r
-};
+ul_2.addEventListener("click", function() {
+  q2.style.display = "none";
+  q3.style.display ="block";
+});
+
+ul_3.addEventListener("click", function() {
+  q3.style.display = "none";
+  survey.style.display ="none";
+  end.style.display = "block";
+});

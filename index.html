@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <scrip src="script.js"></scrip>
+    <script src="js/script.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 <body onkeydown="keyDown()" onkeyup="document.body.style.backgroundColor='white';document.body.style.color='black'">
     <div>
 
-    <h1>Programing school just for you.</h1>
+    <h1>Programming school just for you.</h1>
     <script>
         function keyDown() { 
         document.body.style.backgroundColor = 'lightgray';
@@ -20,36 +20,78 @@
         }
     </script>
   
-    <h2>"Welcome to programing school"</h2>  
-    <p>Welcome new students! in this class you will learn how to code at your own pace and from the confort of your house. The program we offer is 100% remote and no experience is requiered our teachers are here to help and will provide you with the skills you may need. 
+    <h2>Welcome to Programming School</h2>  
+    <p>Welcome new students! In this class you will learn how to code at your own pace and from the comfort of your own home. The program we offer is 100% remote and no experience is required. Our teachers are here to help and will provide you with the skills you need. 
     </p>
   
-    <h3>Programing languages available:</h3>
-   
-    <button type="button"></button>
+   <div class="box1"><h3>Programming languages available</h3></div>
 
-    <ul>
-        <li>Swift</li>
-        <li>Javascrip</li>
-        <li>C+</li>
-        <li>Phyton</li>
-        <li>Ruby</li>
-    </uL>
+   <div>
+        <p>Swift</p>
+        <p>Javascript</p>
+        <p>C+</p>
+        <p>Phyton</p>
+        <p>Ruby</p>
+    </div>
 
-    <h4 class="important">Ready?..But first we need a bit more information about you, take a minute to do this small survey.</h4>
+    <h4 class="important">Ready? But first we need a bit more information about you, take a minute to do this quick survey.</h4>
+    
+    <p><b>Survey Question 1:</b> What's your favorite form of transportation?</p>
+    
+    <div><button id="myBtn">car</button></div>
+    <p id="demo">
 
-<form>
-    <div><button id="c+">I rather drive mycar</button></div>
-    <div class="box1"><h3>Your best fit is Phyton.</h3></div>
-    <di><button id="p1" value="button">I rather ride my bike!</button></di>
-    <div class="box2"><h3>Your best fit is Swift.</h3></div>
-    <div><button id="submit" value="p2">I rather take thebus!</button></div>
-    <div class="box3"><h3>Your best fit is C+.</h3></div>
-    <div><button type="submit" class="btn">I rather ride the train!</button></div>
-    <div class="box3"><h3>Your best fit is C+.</h3></div>
-    <div><button type="submit" class="btn">I rather walk!</button></div> <div class="box5"><h3>Your best fit is Ruby.</h3></div>
-</form>
+        <script>
+            const element = document.getElementById("myBtn");
+            element.addEventListener("click", myFunction);
+            
+        function myFunction() {
+            document.getElementById("demo").innerHTML ="Your best fit is    Python";
+            
+            }
+        </script>
 
+        <div classs="survey">
+            <div class="q1">
+                <h3>What's you favorite color?</h3>
+             <ul class="option">
+                <li>Red</li>
+                <li>blue</li>
+                <li>Green</li>
+                <li>Pink</li>
+                <li>Yellow</li>
+             </ul>
+            </div>
 
-    <h2>"Conglatulations this is what we belive is your best fit"</h2>
+            <div class="q2">
+                <h3>What's you favorite city</h3>
+             <ul class="option2">
+                <li>Cancun</li>
+                <li>Montreal</li>
+                <li>Seattle</li>
+                <li>Miami</li>
+                <li>New York</li>
+             </ul>
 
+         </div>
+            <div class="q3">
+                <h3>What's you favorite park?</h3>
+             <ul class="option3">
+                <li>Yosemeti</li>
+                <li>Yellowstone</li>
+                <li>Zion</li>
+                <li>Grand Canyon</li>
+                <li>Smith Rock</li>
+             </ul>
+            </div>
+        </div>
+        <div class = "end">
+            <h1>Thank you</h1>
+            <a href="index.html">Home</a>
+        </div>
+
+        <script src="app.js"></script>
+        </body>
+        </html>  
+
+          
