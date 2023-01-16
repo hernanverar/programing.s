@@ -1,26 +1,43 @@
-const ul_1 =document.querySelector(".option1");
-const ul_2 =document.querySelector(".option2");
-const ul_3 =document.querySelector(".option3");
+function toggleText() {
+  var text = document.getElementById("demo1");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
 
-const q1 = document.querySelector(".q1");
-const q2 = document.querySelector(".q2");
-const q3 = document.querySelector(".q3");
+function toggleTextTwo() {
+  var text = document.getElementById("demo2");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function toggleTextThree() {
+  var text = document.getElementById("demo3");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
 
-const survey = document.querySelector(".survey");
-const end = document.querySelector(".end");
+function toggleTextFour() {
+var text = document.getElementById("demo4");
+if (text.style.display === "none") {
+  text.style.display = "block";
+} else {
+  text.style.display = "none";
+}
+}
 
-ul_1.addEventListener("click", function() {
-  q1.style.display = "none";
-  q2.style.display ="block";
-});
-
-ul_2.addEventListener("click", function() {
-  q2.style.display = "none";
-  q3.style.display ="block";
-});
-
-ul_3.addEventListener("click", function() {
-  q3.style.display = "none";
-  survey.style.display ="none";
-  end.style.display = "block";
-});
+function toggleTextFive() {
+var text = document.getElementById("demo5");
+if (text.style.display === "none") {
+  text.style.display = "block";
+} else {
+  text.style.display = "none";
+}
+}

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/script.js"></script>
+    <link href="css/styles.css" rel="stylessheet" type="text/css">
+    <script src="script.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,64 +34,32 @@
         <p>Ruby</p>
     </div>
 
-    <h4 class="important">Ready? But first we need a bit more information about you, take a minute to do this quick survey.</h4>
+
+<h4 class="important">Ready? But first we need a bit more information about you, take a minute to do this quick survey.</h4>
+
+<div>
+    <button type='button' onclick="toggleText()"><h4>I would rather go for a hike.</h4> </button>
+  <h2 id='demo1' style='display: none'>Congratulations! Your best fit is Javascript</h2> 
+  </div> 
+  <div>
     
-    <p><b>Survey Question 1:</b> What's your favorite form of transportation?</p>
-    
-    <div><button id="myBtn">car</button></div>
-    <p id="demo">
-
-        <script>
-            const element = document.getElementById("myBtn");
-            element.addEventListener("click", myFunction);
-            
-        function myFunction() {
-            document.getElementById("demo").innerHTML ="Your best fit is    Python";
-            
-            }
-        </script>
-
-        <div classs="survey">
-            <div class="q1">
-                <h3>What's you favorite color?</h3>
-             <ul class="option">
-                <li>Red</li>
-                <li>blue</li>
-                <li>Green</li>
-                <li>Pink</li>
-                <li>Yellow</li>
-             </ul>
-            </div>
-
-            <div class="q2">
-                <h3>What's you favorite city</h3>
-             <ul class="option2">
-                <li>Cancun</li>
-                <li>Montreal</li>
-                <li>Seattle</li>
-                <li>Miami</li>
-                <li>New York</li>
-             </ul>
-
-         </div>
-            <div class="q3">
-                <h3>What's you favorite park?</h3>
-             <ul class="option3">
-                <li>Yosemeti</li>
-                <li>Yellowstone</li>
-                <li>Zion</li>
-                <li>Grand Canyon</li>
-                <li>Smith Rock</li>
-             </ul>
-            </div>
-        </div>
-        <div class = "end">
-            <h1>Thank you</h1>
-            <a href="index.html">Home</a>
-        </div>
-
-        <script src="app.js"></script>
-        </body>
-        </html>  
+  <button type='button' onclick="toggleTextTwo()"><h4>I would rather go shopping.</h4> </button>
+  <h2 id='demo2' style='display: none'>Congratulations! Your best fit is Swift</h2> 
+  </div>
+  <div>
+  <button type='button' onclick="toggleTextThree()"><h4>I would rather go to the gym.</h4> </button>
+  <h2 id='demo3' style='display: none'>Congratulations! Your best fit is Ruby</h2> 
+  </div>
+  <div>
+  <button type='button' onclick="toggleTextFour()"><h4>I would rather watch a movie</h4> </button>
+  <h2 id='demo4' style='display: none'>Congratulations! Your best fit is C+</h2> 
+  </div>
+  <div>
+  <button type='button' onclick="toggleTextFive()"><h4>I would rahter go to the beach.</h4> </button>
+  <h2 id='demo5' style='display: none'>Congratulations! Your best fit is Phyton</h2> 
+  </div>
+        
+ </body
+    </html>  
 
           
